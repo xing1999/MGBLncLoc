@@ -2,7 +2,7 @@
 An Ensemble Deep Learning Framework for Multi-label LncRNA Subcellular Localization with Innovative Encoding Strategy
 
 # Requirements
-#absl-py==0.9.0
+# absl-py==0.9.0
 #astor==0.8.1
 bio==0.1.0
 certifi==2020.4.5.1
