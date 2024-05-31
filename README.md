@@ -67,7 +67,7 @@ Use the following command to run the prediction script:
 python train.py
 ```
 ### 5. Code structure and function descriptions
-## Code structure
+#### Code structure
 - `encode.py`: LncRNA sequence data encoder script.
 - `model.py`: training model construction code.
 - `mian.py`: overall model code.
