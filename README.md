@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ### 2. Configure the pre-trained model code environment
 ### 3. Preparation of input data
 
-The input data should be a CSV file containing lncRNA sequences. Below is an example file `input_data.CSV`:
+The input data should be a TSV file containing lncRNA sequences. Below is an example file `input_data.tsv`:
 
 index/ 	  label/ 	  text
 ```bash
