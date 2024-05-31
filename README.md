@@ -1,7 +1,7 @@
 # MGBLncLoc
 An Ensemble Deep Learning Framework for Multi-label LncRNA Subcellular Localization with Innovative Encoding Strategy
 
-#requirements
+# Requirements
 absl-py==0.9.0
 astor==0.8.1
 bio==0.1.0
@@ -30,3 +30,5 @@ six==1.14.0
 sklearn==0.0
 tensorboard==1.12.2
 tensorflow-gpu==1.12.0
+
+#  Detailed installation and setup guide
