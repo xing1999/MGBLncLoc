@@ -31,4 +31,41 @@ sklearn==0.0
 tensorboard==1.12.2
 tensorflow-gpu==1.12.0
 
-#  Detailed installation and setup guide
+# Detailed installation and setup guide
+Make sure the following is included in the user: (1) All necessary dependencies and their installation commands. (2) Specific steps for installing a virtual environment and installing dependencies.
+## Installation guide
+### Cloning the repository
+git clone https://github.com/xing1999/MGBLncLoc.git
+cd MGBLncLoc
+### 1. Create a virtual environment and install dependencies
+python3 -m venv venv
+source venv/bin/activate  # Using `venv\Scripts\activate` on Windows
+pip install -r requirements.txt
+### 2. Configure the pre-trained model code environment
+### 3. Preparation of input data
+The input data should be a CSV file containing lncRNA sequences. Below is an example file `input_data.CSV`:
+index	label	text
+1	0	TTCTGGACACTATTCTATTTATCTATGTTTTTATTCTTTCACCAATTCCACATTGTCTTGATTACTATAACTTTATAGTAAGTCTTGAAATTAAGTAATGTGAGTCCTCTGACTTTGTTGTTCTTCTATATTGTATTGCCTATGCTCAGCTACTCTTATCCATATAAAATATACAGTAGTTTGTTGATATCTAGAAAATACCTTGATGAGAATTTGATTGG
+2	1	AGACTAGGGATGTCCTGAGAACTATATTGATAGCTGCGACCTGTGTCTCGGTTGCTTCTCTCTTGTTCAGTGCTGCTTCCTTTACTCTCATAGGTGTTTGCTCCCTAAAATATTCCCCAGTCTGCTTCCTGGGGAAACCCAACCTAAAACTCCTAACTGACCTAAAACAGGCTGCTGGGGTCTAGCACTCTTCAGCTAGGACTTCACTTCTTCCCTCATGG
+3	2	GTGACTTCAACTGAATAAATTTGAATTTCTGTAGGGAGTAAAGAATCAAAACACCTATTTAAAGACTGCAAAATATGATAATTATTTTTAAAGTAATTGATTAAACCTGGTAGGTTTTCCCAAAATGAAAAACAATCAGTTCTAAAACCAAAGCTGATTTTTAGAAAATGTGAAAATGTAAATCAACCCTATCCATAATAGATTCTCTAAAACTTTATCTT
+4	3	TGTCACCATGCCCTGTTAATTTTTGTTTGTTTGTTTTGTTTTTTGTTTTGTTTTGTTTCGTTTTTTGTTTTTTTTTTTTGAGACGGAGTCTTGCTCTGTCGCCCAGGCTGGAGTGCAGTGGCCCCGATCTCGGCTCACCGCAAGCTCCGCCTCGCGGGTTCATGCCATTCTCCGGCCTCAGCCTCCCGAGTAGCTGGGACTACAGGCATCCGCCACCACAC
+Place your input data file in the `data` folder.
+### 4. Run the prediction
+Use the following command to run the prediction script:
+```bash
+python train.py
+### 5.Code structure and function descriptions
+## Code structure
+- `encode.py`: LncRNA sequence data encoder script.
+- `model.py`: training model construction code.
+- `mian.py`: overall model code.
+- `trian.py`: code section for model training sequence data.
+- `test.py`: code section for model test sequence data.
+- `utils.py`: module containing auxiliary functions and tools.
+### 6. Frequently Asked Questions (FAQ)
+Q1: How to solve the dependency installation problem?
+A: Please make sure you are using a virtual environment and run the following command:
+```bash
+pip install -r requirements.txt
+Q2: What should I do if I get an error when running the prediction script?
+A: Please check if the input file path and model file path are correct. If the problem still exists, please contact the author for detailed error information and we will try our best to answer it.
