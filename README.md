@@ -2,8 +2,9 @@
 An Ensemble Deep Learning Framework for Multi-label LncRNA Subcellular Localization with Innovative Encoding Strategy
 
 # Requirements
-# absl-py==0.9.0
-#astor==0.8.1
+```bash
+absl-py==0.9.0
+astor==0.8.1
 bio==0.1.0
 certifi==2020.4.5.1
 cycler==0.10.0
@@ -30,7 +31,7 @@ six==1.14.0
 sklearn==0.0
 tensorboard==1.12.2
 tensorflow-gpu==1.12.0
-
+```
 # Detailed installation and setup guide
 Make sure the following is included in the user: (1) All necessary dependencies and their installation commands. (2) Specific steps for installing a virtual environment and installing dependencies.
 ## Installation guide
