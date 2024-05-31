@@ -54,7 +54,8 @@ Place your input data file in the `data` folder.
 Use the following command to run the prediction script:
 ```bash
 python train.py
-### 5.Code structure and function descriptions
+```
+### 5. Code structure and function descriptions
 ## Code structure
 - `encode.py`: LncRNA sequence data encoder script.
 - `model.py`: training model construction code.
@@ -67,5 +68,6 @@ Q1: How to solve the dependency installation problem?
 A: Please make sure you are using a virtual environment and run the following command:
 ```bash
 pip install -r requirements.txt
+```
 Q2: What should I do if I get an error when running the prediction script?
 A: Please check if the input file path and model file path are correct. If the problem still exists, please contact the author for detailed error information and we will try our best to answer it.
