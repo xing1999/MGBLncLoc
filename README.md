@@ -33,9 +33,9 @@ tensorboard==1.12.2
 tensorflow-gpu==1.12.0
 ```
 # Detailed installation and setup guide
-```bash
+
 Make sure the following is included in the user: (1) All necessary dependencies and their installation commands. (2) Specific steps for installing a virtual environment and installing dependencies.
-```
+
 ## Installation guide
 ### Cloning the repository
 ```bash
@@ -74,9 +74,11 @@ python train.py
 - `utils.py`: module containing auxiliary functions and tools.
 ### 6. Frequently Asked Questions (FAQ)
 Q1: How to solve the dependency installation problem?
+
 A: Please make sure you are using a virtual environment and run the following command:
 ```bash
 pip install -r requirements.txt
 ```
 Q2: What should I do if I get an error when running the prediction script?
+
 A: Please check if the input file path and model file path are correct. If the problem still exists, please contact the author for detailed error information and we will try our best to answer it.
