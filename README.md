@@ -33,23 +33,31 @@ tensorboard==1.12.2
 tensorflow-gpu==1.12.0
 ```
 # Detailed installation and setup guide
+```bash
 Make sure the following is included in the user: (1) All necessary dependencies and their installation commands. (2) Specific steps for installing a virtual environment and installing dependencies.
+```
 ## Installation guide
 ### Cloning the repository
+```bash
 git clone https://github.com/xing1999/MGBLncLoc.git
 cd MGBLncLoc
+```
 ### 1. Create a virtual environment and install dependencies
+```bash
 python3 -m venv venv
 source venv/bin/activate  # Using `venv\Scripts\activate` on Windows
 pip install -r requirements.txt
+```
 ### 2. Configure the pre-trained model code environment
 ### 3. Preparation of input data
+
 The input data should be a CSV file containing lncRNA sequences. Below is an example file `input_data.CSV`:
 index	label	text
 1	0	TTCTGGACACTATTCTATTTATCTATGTTTTTATTCTTTCACCAATTCCACATTGTCTTGATTACTATAACTTTATAGTAAGTCTTGAAATTAAGTAATGTGAGTCCTCTGACTTTGTTGTTCTTCTATATTGTATTGCCTATGCTCAGCTACTCTTATCCATATAAAATATACAGTAGTTTGTTGATATCTAGAAAATACCTTGATGAGAATTTGATTGG
 2	1	AGACTAGGGATGTCCTGAGAACTATATTGATAGCTGCGACCTGTGTCTCGGTTGCTTCTCTCTTGTTCAGTGCTGCTTCCTTTACTCTCATAGGTGTTTGCTCCCTAAAATATTCCCCAGTCTGCTTCCTGGGGAAACCCAACCTAAAACTCCTAACTGACCTAAAACAGGCTGCTGGGGTCTAGCACTCTTCAGCTAGGACTTCACTTCTTCCCTCATGG
 3	2	GTGACTTCAACTGAATAAATTTGAATTTCTGTAGGGAGTAAAGAATCAAAACACCTATTTAAAGACTGCAAAATATGATAATTATTTTTAAAGTAATTGATTAAACCTGGTAGGTTTTCCCAAAATGAAAAACAATCAGTTCTAAAACCAAAGCTGATTTTTAGAAAATGTGAAAATGTAAATCAACCCTATCCATAATAGATTCTCTAAAACTTTATCTT
 4	3	TGTCACCATGCCCTGTTAATTTTTGTTTGTTTGTTTTGTTTTTTGTTTTGTTTTGTTTCGTTTTTTGTTTTTTTTTTTTGAGACGGAGTCTTGCTCTGTCGCCCAGGCTGGAGTGCAGTGGCCCCGATCTCGGCTCACCGCAAGCTCCGCCTCGCGGGTTCATGCCATTCTCCGGCCTCAGCCTCCCGAGTAGCTGGGACTACAGGCATCCGCCACCACAC
+
 Place your input data file in the `data` folder.
 ### 4. Run the prediction
 Use the following command to run the prediction script:
